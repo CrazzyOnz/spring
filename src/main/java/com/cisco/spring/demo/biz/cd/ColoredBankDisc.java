@@ -7,9 +7,9 @@ import com.cisco.spring.demo.api.CompactDisc;
 import com.cisco.spring.demo.config.Blank;
 import com.cisco.spring.demo.config.Color;
 
-@Component
-@Blank
-@Color
+//@Component
+//@Blank
+//@Color
 public class ColoredBankDisc implements CompactDisc {
 
 	private String title;
@@ -27,5 +27,10 @@ public class ColoredBankDisc implements CompactDisc {
 	public void play() {
 		System.out.println("Playing " + title + " by " + artist + " in " + color + " Pack");
 	}
+	
+	public void playTrack(int trackNumber) {
+		// TODO Auto-generated method stub
+		
+	}  
 
 }
